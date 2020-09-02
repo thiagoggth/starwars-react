@@ -1,0 +1,62 @@
+@import url("//fonts.googleapis.com/css?family=Lato:700");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ITC Serif Gothic", Lato;
+}
+
+.home-wrapper{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  padding: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: rgba(229, 177, 58, 1);
+  font-family: "ITC Serif Gothic", Lato;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.item:hover,
+.item:focus {
+  outline-style: none;
+  padding: 40px;
+  box-shadow: 0 0 0px 2px rgba(229, 177, 58, 1) inset;
+}
+
+.starwarsheader {
+  width: 30%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+}
+
+a:hover{
+  color: rgba(229, 177, 58, 1);
+  text-decoration: none;
+}
+
+@media (min-width: 576px) {
+  .item {
+    height: 15vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .item {
+    height: 30vh;
+  }
+}
